@@ -75,10 +75,14 @@ function whoIsBigger (x, y) {
 
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
-    Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]{
+    Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]*/
 
-    }
-*/
+function splitMe (str) {
+  let words = str.split(" ")
+  //console.log(words) 
+  return words
+}
+//splitMe("I love coding")
 
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
