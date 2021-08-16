@@ -113,7 +113,15 @@ function onlyLetters (str) {
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
-
+function isThisAnEmail (str) {
+    let email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (str.match(email)) {
+    return true 
+  } else {
+    return false 
+  }
+}
+console.log(isThisAnEmail("d.kolobam@speedmailorg"))
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
