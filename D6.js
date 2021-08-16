@@ -52,9 +52,9 @@ me.skills.pop()
 */
 function dice () {
     let random = 1 + Math.floor(Math.random() *6)
-    //console.log(random)
+    return random
 }
-//dice()
+//console.log(dice())
 
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
@@ -168,7 +168,19 @@ function whatDayIsIt(){
         values: [3, 3, 4]
     }
 */
-
+function rollTheDices(num) {
+    let obj = {
+        sum: 0,
+        values: [] 
+    }
+    for (x = 0; x < num; x++){
+       let y = dice()
+        obj.sum = obj.sum + y
+        obj.values.push(y)
+    }
+    return obj
+}
+console.log(rollTheDices(30))
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
