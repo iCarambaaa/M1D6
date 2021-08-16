@@ -87,7 +87,18 @@ function splitMe (str) {
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
-
+function deleteMe (str, bool) {
+    let str1
+    if (bool === true) {
+        str1 = str.substring(1)
+    } else {
+        str1 = str.substring(0, str.length - 1)
+    }
+    console.log(str1)
+    return str1
+}
+deleteMe("I love coding", true)
+deleteMe("I love coding", false)
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
