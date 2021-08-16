@@ -121,10 +121,42 @@ function isThisAnEmail (str) {
     return false 
   }
 }
-console.log(isThisAnEmail("d.kolobam@speedmailorg"))
+//console.log(isThisAnEmail("d.kolobam@speedmail.org"))
+
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
+function whatDayIsIt(){
+    let date = new Date()
+    let dayOfWeekNumber = date.getDay()
+    let nameOfDay
+
+    switch(dayOfWeekNumber){
+        case 0: 
+            nameOfDay = 'Sunday'
+            break
+        case 1:
+            nameOfDay = 'Monday'
+            break
+        case 2:
+            nameOfDay = 'Tuesday'
+            break
+        case 3:
+            nameOfDay = 'Wednesday'
+            break
+        case 4:
+            nameOfDay = 'Thursday'
+            break
+        case 5:
+            nameOfDay = 'Friday'
+            break
+        case 6:
+            nameOfDay = 'Saturday'
+            break
+    
+} return nameOfDay
+}
+//console.log(whatDayIsIt())
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
