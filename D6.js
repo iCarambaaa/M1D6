@@ -94,15 +94,21 @@ function deleteMe (str, bool) {
     } else {
         str1 = str.substring(0, str.length - 1)
     }
-    console.log(str1)
+    //console.log(str1)
     return str1
 }
-deleteMe("I love coding", true)
-deleteMe("I love coding", false)
+//deleteMe("I love coding", true)
+//deleteMe("I love coding", false)
 /* Ex.5
-   Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
+  Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
+function onlyLetters (str) {
+    let oL = str.replace(/[0-9]/g, '')
+    //console.log(oL)
+    return oL
+}
+//onlyLetters("I have 1234567890 dogs")
 
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
