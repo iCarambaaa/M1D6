@@ -180,7 +180,7 @@ function rollTheDices(num) {
     }
     return obj
 }
-//console.log(rollTheDices(30))
+console.log(rollTheDices(30))
 
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
